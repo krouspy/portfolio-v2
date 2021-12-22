@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Flex, Stack, Spacer, Button, Text } from '@chakra-ui/react';
+import { Flex, Stack, Spacer, Button } from '@chakra-ui/react';
 import ActiveLink from './active-link';
 import ButtonResume from './button-resume';
 import { colors } from '@/constants';
@@ -30,7 +30,7 @@ const pages = [
 
 export const Navbar: React.FC = () => {
   return (
-    <Flex w="60vw" h="100%" justifyContent="center" alignItems="center">
+    <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
       <Link href="/">
         <Button variant="ghost" color={colors.blue}>
           Kenji LAU

@@ -11,18 +11,11 @@ const Layout: React.FC = ({ children }) => {
         <meta name="description" content="Kenji LAU's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <VStack maxH="100vh" maxW="100vw" fontFamily="IBMPlexMono" spacing="0">
-        <Box h="8vh" maxH="8vh">
+      <VStack maxH="100vh" maxW="100vw" fontFamily="IBMPlexMono" spacing="0" px="15%">
+        <Box w="100%" maxW="100%" h="8vh" maxH="8vh">
           <Navbar />
         </Box>
-        <Box
-          h="92vh"
-          maxH="92vh"
-          maxW="100vw"
-          justifyContent="center"
-          alignContent="center"
-          px="20%"
-        >
+        <Box w="100%" maxW="100%" h="92vh" maxH="92vh" px="5%">
           {children}
         </Box>
       </VStack>
