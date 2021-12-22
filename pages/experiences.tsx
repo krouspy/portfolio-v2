@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Stack, Divider } from '@chakra-ui/react';
+import { Stack, Box, Divider } from '@chakra-ui/react';
 import { Experience } from '@/components';
 import { IExperience } from '@/types';
 
@@ -53,16 +53,10 @@ const Experiences: NextPage = () => {
   return (
     <Stack h="100%" px="5%" pt="10%" spacing="12">
       {experiences.map(({ id, jobTitle, company, dates, details }) => (
-        <>
-          <Experience
-            key={id}
-            jobTitle={jobTitle}
-            company={company}
-            dates={dates}
-            details={details}
-          />
+        <Stack key={id} direction="column" spacing="12">
+          <Experience jobTitle={jobTitle} company={company} dates={dates} details={details} />
           <Divider />
-        </>
+        </Stack>
       ))}
     </Stack>
   );
