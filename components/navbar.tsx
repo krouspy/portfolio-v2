@@ -11,7 +11,7 @@ const pages = Object.values(routes).map((route, index) => ({ ...route, id: index
 export const Navbar: React.FC = () => {
   return (
     <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
-      <Link href={routes.home.href}>
+      <Link href={routes.home.href} passHref>
         <Button variant="ghost" color={colors.blue}>
           Kenji LAU
         </Button>
