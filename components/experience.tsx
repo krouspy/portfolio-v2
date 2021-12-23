@@ -12,10 +12,10 @@ export const Experience: React.FC<IExperience> = ({
 }) => {
   return (
     <Stack w="100%">
-      <Grid templateColumns={{ base: 'repeat(1, 1fr)', xl: 'repeat(2, 1fr)' }}>
+      <Grid gap="6" templateColumns={{ base: 'repeat(1, 1fr)', xl: 'repeat(2, 1fr)' }}>
         <GridItem colSpan={1} justifyItems="center">
           <Stack direction="column" spacing={2}>
-            <Text fontSize="2xl" color={colors.blue} fontWeight="bold">
+            <Text fontSize={{ base: 'lg', md: '2xl' }} color={colors.blue} fontWeight="bold">
               {jobTitle}
             </Text>
             <Text fontSize={{ base: 'sm', xl: 'md' }} color={colors.blue} fontWeight="bold">
@@ -23,11 +23,11 @@ export const Experience: React.FC<IExperience> = ({
                 @{company}
               </Link>
             </Text>
-            <Text fontSize="md">{dates}</Text>
+            <Text fontSize={{ base: 'sm', md: 'md' }}>{dates}</Text>
           </Stack>
         </GridItem>
         <GridItem colSpan={1}>
-          <UnorderedList spacing="6">
+          <UnorderedList spacing="6" fontSize={{ base: 'sm', md: 'md' }}>
             {details.map(({ id, content }) => (
               <ListItem key={id}>{content}</ListItem>
             ))}
