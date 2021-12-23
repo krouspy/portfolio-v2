@@ -66,7 +66,7 @@ const projects: IProjectCard[] = [
     id: 4,
     title: 'Monnaies Numeriques',
     description:
-      'Some blockchain courses I had at my engineering school. It goes from receiving bitcoin payments through the lightning network to writing smart contracts on Ethereum',
+      'Receive bitcoin payments through the lightning network and writing smart contracts on Ethereum',
     inProgress: false,
     github: 'https://github.com/krouspy/monnaies-numeriques',
     technologies: ['Bitcoin', 'Ethereum'],

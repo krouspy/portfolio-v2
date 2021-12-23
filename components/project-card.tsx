@@ -21,7 +21,7 @@ export const ProjectCard: React.FC<IProjectCard> = ({
     >
       <Stack
         w="100%"
-        h={{ base: '270', md: '300' }}
+        h={{ base: '280', md: '300' }}
         px="4"
         pt="3"
         pb="2"
@@ -33,13 +33,17 @@ export const ProjectCard: React.FC<IProjectCard> = ({
         _hover={{ mt: '-7px' }}
       >
         <Flex alignItems="center">
-          <Icon as={FiFolder} fontSize="xx-large" color={colors.blue} />
+          <Icon as={FiFolder} fontSize={{ base: 'xl', lg: '2xl' }} color={colors.blue} />
           <Spacer />
-          <Icon as={FiGithub} fontSize="x-large" _hover={{ color: colors.blue }} />
+          <Icon
+            as={FiGithub}
+            fontSize={{ base: 'xl', lg: 'x-large' }}
+            _hover={{ color: colors.blue }}
+          />
         </Flex>
         <Flex direction="column" h="100%" py="3">
           <Flex direction="row" alignItems="center" mb="3">
-            <Text fontSize={{ base: 'lg', lg: 'xl' }} fontWeight="bold">
+            <Text fontSize={{ base: 'md', lg: 'lg', xl: 'xl' }} fontWeight="bold">
               {title}
             </Text>
             {inProgress && (
@@ -51,9 +55,9 @@ export const ProjectCard: React.FC<IProjectCard> = ({
               </>
             )}
           </Flex>
-          <Text fontSize={{ base: 'xs', sm: 'sm', lg: 'lg' }}>{description}</Text>
+          <Text fontSize={{ base: 'xs', md: 'sm', xl: 'md' }}>{description}</Text>
           <Spacer />
-          <Text fontSize="sm" textAlign="right" color={colors.gray}>
+          <Text fontSize={{ base: 'xs', md: 'sm' }} textAlign="right" color={colors.gray}>
             {technologies.join(' - ')}
           </Text>
         </Flex>
