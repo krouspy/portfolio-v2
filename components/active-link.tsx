@@ -1,25 +1,29 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import NextLink, { LinkProps } from 'next/link';
+import Link, { LinkProps } from 'next/link';
 import { Button } from '@chakra-ui/react';
 import { colors } from '@/constants';
 
-const ActiveLink: React.FC<React.PropsWithChildren<LinkProps>> = ({ href, children, ...rest }) => {
+export const ActiveLink: React.FC<React.PropsWithChildren<LinkProps>> = ({
+  href,
+  children,
+  ...rest
+}) => {
   const { asPath } = useRouter();
   const isActive = asPath === href;
   return (
-    <NextLink href={href} passHref {...rest}>
+    <Link href={href} passHref {...rest}>
       <Button
-        fontSize="md"
+        fontSize={{ base: 'sm', xl: 'md' }}
         fontWeight={isActive ? 'bold' : 'normal'}
         color={isActive ? colors.blue : colors.black}
-        variant={'ghost'}
-        bg={isActive ? '#fff' : 'inherit'}
+        variant="ghost"
+        bg={isActive ? colors.white : 'inherit'}
         borderRadius="8"
       >
         {children}
       </Button>
-    </NextLink>
+    </Link>
   );
 };
 

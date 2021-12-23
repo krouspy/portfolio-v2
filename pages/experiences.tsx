@@ -5,7 +5,7 @@ import { IExperience } from '@/types';
 
 const Experiences: NextPage = () => {
   return (
-    <Stack h="100%" px="5%" pt="10%" spacing="12">
+    <Stack h="100%" px="5%" spacing="12">
       {experiences.map(({ id, jobTitle, company, dates, details }) => (
         <Stack key={id} direction="column" spacing="12">
           <Experience jobTitle={jobTitle} company={company} dates={dates} details={details} />

@@ -5,8 +5,11 @@ import { IProjectCard } from '@/types';
 
 const Projects: NextPage = () => {
   return (
-    <Stack h="100%" pt="10%">
-      <Grid templateRows="repeat(2, 1fr)" templateColumns="repeat(3, 1fr)" gap="6">
+    <Stack h="100%">
+      <Grid
+        templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', xl: 'repeat(3, 1fr)' }}
+        gap="6"
+      >
         {projects.map(({ id, title, description, inProgress, github, website, technologies }) => (
           <GridItem key={id} colSpan={1}>
             <ProjectCard

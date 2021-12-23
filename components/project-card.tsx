@@ -39,7 +39,7 @@ export const ProjectCard: React.FC<IProjectCard> = ({
         </Flex>
         <Flex direction="column" h="100%" py="3">
           <Flex direction="row" alignItems="center" mb="3">
-            <Text fontSize="xl" fontWeight="bold">
+            <Text fontSize={{ base: 'lg', lg: 'xl' }} fontWeight="bold">
               {title}
             </Text>
             {inProgress && (
@@ -51,7 +51,7 @@ export const ProjectCard: React.FC<IProjectCard> = ({
               </>
             )}
           </Flex>
-          <Text fontSize="md">{description}</Text>
+          <Text fontSize={{ base: 'xs', sm: 'sm', lg: 'lg' }}>{description}</Text>
           <Spacer />
           <Text fontSize="sm" textAlign="right" color={colors.gray}>
             {technologies.join(' - ')}
