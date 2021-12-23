@@ -6,7 +6,7 @@ import { colors } from '@/constants';
 
 const Home: NextPage = () => {
   return (
-    <Stack h="100%" align="center" px="7%" pt="12%" spacing="8">
+    <Stack h="100%" align="center" px="7%" spacing="8" pt="12%">
       <Text fontSize="4xl" fontWeight="bold" align="center">
         <span style={{ color: colors.blue }}>
           Hi <Image src="/waving-hand.jpg" width="25" height="25" /> <br /> I am Kenji LAU
