@@ -13,8 +13,8 @@ const pages = [
   },
   {
     id: 1,
-    label: 'Blog',
-    href: '/blog',
+    label: 'About',
+    href: '/about',
   },
   {
     id: 2,
@@ -25,6 +25,11 @@ const pages = [
     id: 3,
     label: 'Projects',
     href: '/projects',
+  },
+  {
+    id: 4,
+    label: 'Blog',
+    href: '/blog',
   },
 ];
 
