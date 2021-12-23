@@ -8,3 +8,13 @@ export interface IExperience {
     content: string;
   }[];
 }
+
+export interface IProjectCard {
+  id?: number;
+  title: string;
+  description: string;
+  github: string;
+  website?: string;
+  technologies: string[];
+  inProgress?: boolean;
+}
