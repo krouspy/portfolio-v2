@@ -9,7 +9,7 @@ const Layout: React.FC = ({ children }) => {
       <Head>
         <title>Kenji LAU</title>
         <meta name="description" content="Kenji LAU's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <VStack
         minH="100vh"
