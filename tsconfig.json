@@ -18,6 +18,7 @@
     "paths": {
       "@/components": ["components/index.tsx"],
       "@/constants": ["constants/index.ts"],
+      "@/routes": ["routes/index.ts"],
       "@/types": ["types/index.d.ts"]
     }
   },
