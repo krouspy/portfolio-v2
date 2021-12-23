@@ -6,9 +6,15 @@ import { IExperience } from '@/types';
 const Experiences: NextPage = () => {
   return (
     <Stack h="100%" px="5%" spacing="12">
-      {experiences.map(({ id, jobTitle, company, dates, details }) => (
+      {experiences.map(({ id, jobTitle, company, websiteUrl, dates, details }) => (
         <Stack key={id} direction="column" spacing="12">
-          <Experience jobTitle={jobTitle} company={company} dates={dates} details={details} />
+          <Experience
+            jobTitle={jobTitle}
+            company={company}
+            websiteUrl={websiteUrl}
+            dates={dates}
+            details={details}
+          />
           <Divider />
         </Stack>
       ))}
@@ -21,8 +27,9 @@ export default Experiences;
 const experiences: IExperience[] = [
   {
     id: 0,
-    jobTitle: 'Blockchain Developer',
+    jobTitle: 'Full-Stack & Blockchain Developer',
     company: 'Wakam',
+    websiteUrl: 'https://www.wakam.com/en/',
     dates: 'October 2019 - August 2021',
     details: [
       {
@@ -42,8 +49,9 @@ const experiences: IExperience[] = [
   },
   {
     id: 1,
-    jobTitle: 'Full-Stack Developer',
+    jobTitle: 'Backend Engineer',
     company: 'SopraBankingSoftware',
+    websiteUrl: 'https://www.soprabanking.com/',
     dates: 'October 2020 - January 2021',
     details: [
       {

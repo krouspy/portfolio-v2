@@ -1,9 +1,15 @@
 import React from 'react';
-import { Stack, Grid, GridItem, Text, UnorderedList, ListItem } from '@chakra-ui/react';
+import { Stack, Grid, GridItem, Text, UnorderedList, ListItem, Link } from '@chakra-ui/react';
 import { IExperience } from '@/types';
 import { colors } from '@/constants';
 
-export const Experience: React.FC<IExperience> = ({ jobTitle, company, dates, details }) => {
+export const Experience: React.FC<IExperience> = ({
+  jobTitle,
+  company,
+  websiteUrl,
+  dates,
+  details,
+}) => {
   return (
     <Stack w="100%">
       <Grid templateColumns={{ base: 'repeat(1, 1fr)', xl: 'repeat(2, 1fr)' }}>
@@ -13,7 +19,9 @@ export const Experience: React.FC<IExperience> = ({ jobTitle, company, dates, de
               {jobTitle}
             </Text>
             <Text fontSize={{ base: 'sm', xl: 'md' }} color={colors.blue} fontWeight="bold">
-              @{company}
+              <Link href={websiteUrl} isExternal>
+                @{company}
+              </Link>
             </Text>
             <Text fontSize="md">{dates}</Text>
           </Stack>
