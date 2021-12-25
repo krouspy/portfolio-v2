@@ -5,3 +5,5 @@ export * from './experience';
 export * from './project-card';
 export * from './line-spacer';
 export * from './active-link';
+export * from './tech-stack';
+export * from './custom-link';
