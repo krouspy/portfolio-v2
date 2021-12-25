@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { Stack, Divider } from '@chakra-ui/react';
 import { Experience } from '@/components';
 import { IExperience } from '@/types';
+import { urls } from '@/constants';
 
 const Experiences: NextPage = () => {
   return (
@@ -29,7 +30,7 @@ const experiences: IExperience[] = [
     id: 0,
     jobTitle: 'Full-Stack & Blockchain Developer',
     company: 'Wakam',
-    websiteUrl: 'https://www.wakam.com/en/',
+    websiteUrl: urls.companies.wakam,
     dates: 'October 2019 - August 2021',
     details: [
       {
@@ -51,7 +52,7 @@ const experiences: IExperience[] = [
     id: 1,
     jobTitle: 'Backend Engineer',
     company: 'SopraBankingSoftware',
-    websiteUrl: 'https://www.soprabanking.com/',
+    websiteUrl: urls.companies.sopraBankingSoftware,
     dates: 'October 2020 - January 2021',
     details: [
       {

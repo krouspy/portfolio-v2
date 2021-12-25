@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import { Stack, Text, Link } from '@chakra-ui/react';
-import { colors } from '@/constants';
+import { Stack, Text } from '@chakra-ui/react';
+import { colors, urls } from '@/constants';
 import { TechStack, CustomLink, LineSpacer } from '@/components';
 
 const About: NextPage = () => {
@@ -19,17 +19,24 @@ const About: NextPage = () => {
         it.
         <LineSpacer />
         Fast-forward to today, I had the opportunity to work at an{' '}
-        <CustomLink href="https://www.wakam.com/en/">Insurance company</CustomLink> and to
-        collaborate on a student project with a{' '}
-        <CustomLink href="https://www.soprabanking.com/">Banking company</CustomLink>. My goal is to
-        keep learning everyday and build things around DeFi and NFTs while exploring other
+        <CustomLink href={urls.companies.wakam}>Insurance company</CustomLink> and to collaborate on
+        a student project with a{' '}
+        <CustomLink href={urls.companies.sopraBankingSoftware}>Banking company</CustomLink>. My goal
+        is to keep learning everyday and build things around DeFi and NFTs while exploring other
         ecosystems such as Polkadot, Avalanche, Solana and Layer 2 technologies.
         <LineSpacer />
         My main Tech Stack is currently focused on the web and I am looking to dive deep into other
         technologies like Golang and Rust.
         <LineSpacer />
-        Aside from that, I really enjoy video games like League of Legends and Valorant and I&apos;m
-        a big fan of animes such as Jujutsu Kaisen, Demon Slayer and Owari no Seraph
+        Aside from that, I really enjoy video games like{' '}
+        <CustomLink href={urls.videoGames.leagueOfLegends}>League of Legends</CustomLink> and{' '}
+        <CustomLink href={urls.videoGames.valorant}>Valorant</CustomLink> and I&apos;m a big fan of
+        animes such as <CustomLink href={urls.animes.jujutsuKaisen}>Jujutsu Kaisen</CustomLink>,{' '}
+        <CustomLink href={urls.animes.demonSlayer}>Demon Slayer</CustomLink> and{' '}
+        <CustomLink href={urls.animes.thatTimeIGotReincarnatedAsASlime}>
+          {' '}
+          That time I got reincarnated as a slime
+        </CustomLink>
       </Text>
       <TechStack />
     </Stack>
