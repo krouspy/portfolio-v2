@@ -27,7 +27,7 @@ const Layout: React.FC = ({ children }) => {
           h="100%"
           minH="92vh"
           px={{ md: '5%' }}
-          pt={{ base: '7%', lg: '10%' }}
+          pt={{ base: '2%', lg: '5%', xl: '8%' }}
           pb="5%"
         >
           {children}
