@@ -32,6 +32,14 @@ export default Projects;
 const projects: IProjectCard[] = [
   {
     id: 0,
+    title: 'Twitter Clone',
+    description: 'Building a Twitter clone with Next.js, trpc, prisma and PlanetScale',
+    inProgress: true,
+    github: 'https://github.com/krouspy/twitter-clone',
+    technologies: ['Next.js', 'Trpc', 'Prisma', 'MySQL'],
+  },
+  {
+    id: 1,
     title: 'Portfolio V2',
     description: 'Second version of my personal website',
     inProgress: true,
@@ -39,7 +47,7 @@ const projects: IProjectCard[] = [
     technologies: ['Next.js', 'Vercel', 'Chakra UI'],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Schedular Multisig',
     description: 'Upgradeable contract behind a Multisig contract on Acala',
     inProgress: false,
@@ -47,7 +55,7 @@ const projects: IProjectCard[] = [
     technologies: ['Solidity', 'Hardhat', 'Acala'],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Portfolio',
     description: 'First version of my personal website built with Next.js and hosted on Vercel',
     inProgress: false,
@@ -55,7 +63,7 @@ const projects: IProjectCard[] = [
     technologies: ['Next.js', 'Vercel', 'Chakra UI'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Colloc-Chain',
     description: 'Collocation platform built on a Hyperledger Besu private blockchain',
     inProgress: false,
@@ -63,7 +71,7 @@ const projects: IProjectCard[] = [
     technologies: ['Solidity', 'Node.js', 'Mongo'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Monnaies Numeriques',
     description:
       'Receive bitcoin payments through the lightning network and writing smart contracts on Ethereum',
@@ -72,7 +80,7 @@ const projects: IProjectCard[] = [
     technologies: ['Bitcoin', 'Ethereum'],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Ethereum - Selfish Mining',
     description: 'Website that explains how selfish mining on Ethereum works and its impact',
     inProgress: false,
@@ -81,7 +89,7 @@ const projects: IProjectCard[] = [
     technologies: ['Ethereum', 'React', 'Netlify'],
   },
   {
-    id: 6,
+    id: 7,
     title: 'CLightning',
     description:
       'Documentation explaining how to write a plugin in python for the Clightning client',
