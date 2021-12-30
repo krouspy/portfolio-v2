@@ -36,7 +36,7 @@ const projects: IProjectCard[] = [
     description: 'Building a Twitter clone with Next.js, trpc, prisma and PlanetScale',
     inProgress: true,
     github: 'https://github.com/krouspy/twitter-clone',
-    technologies: ['Next.js', 'Trpc', 'Prisma', 'MySQL'],
+    technologies: ['Next.js', 'Trpc', 'Prisma'],
   },
   {
     id: 1,
