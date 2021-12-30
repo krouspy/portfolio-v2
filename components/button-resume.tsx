@@ -12,6 +12,9 @@ export const ButtonResume: React.FC<ButtonProps> = ({ size, ...rest }) => (
     variant="outline"
     size={size}
     {...rest}
+    _hover={{
+      bg: colors.blueLight,
+    }}
   >
     Resume
   </Button>
