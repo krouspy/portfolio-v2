@@ -21,15 +21,7 @@ const Layout: React.FC = ({ children }) => {
         <Box w="100%" maxW="100%" h="10vh" maxH="10vh">
           <Navbar />
         </Box>
-        <Box
-          w="100%"
-          maxW="100%"
-          h="100%"
-          minH="90vh"
-          px={{ md: '5%' }}
-          pt={{ base: '5%', xl: '8%' }}
-          pb="5%"
-        >
+        <Box w="100%" maxW="100%" h="100%" minH="90vh" px={{ md: '5%' }} pt="5%" pb="5%">
           {children}
         </Box>
       </VStack>
