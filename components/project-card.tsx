@@ -1,6 +1,7 @@
 import React from 'react';
 import { Stack, Flex, Text, Link, Icon, Spacer } from '@chakra-ui/react';
 import { FiFolder, FiGithub } from 'react-icons/fi';
+import { useTheme } from '@/context/theme-context';
 import { IProjectCard } from '@/types';
 import { colors } from '@/constants';
 
@@ -12,6 +13,7 @@ export const ProjectCard: React.FC<IProjectCard> = ({
   website,
   technologies,
 }) => {
+  const { color } = useTheme();
   return (
     <Link
       href={website || github}
@@ -27,19 +29,15 @@ export const ProjectCard: React.FC<IProjectCard> = ({
         pb="2"
         direction="column"
         borderRadius="10px"
-        borderColor={colors.blue}
+        borderColor={color}
         borderWidth="2px"
         transition="0.5s ease"
         _hover={{ mt: '-7px' }}
       >
         <Flex alignItems="center">
-          <Icon as={FiFolder} fontSize={{ base: 'xl', lg: '2xl' }} color={colors.blue} />
+          <Icon as={FiFolder} fontSize={{ base: 'xl', lg: '2xl' }} color={color} />
           <Spacer />
-          <Icon
-            as={FiGithub}
-            fontSize={{ base: 'xl', lg: 'x-large' }}
-            _hover={{ color: colors.blue }}
-          />
+          <Icon as={FiGithub} fontSize={{ base: 'xl', lg: 'x-large' }} _hover={{ color: color }} />
         </Flex>
         <Flex direction="column" h="100%" py="3">
           <Flex direction="row" alignItems="center" mb="3">

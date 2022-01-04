@@ -19,6 +19,8 @@
       "@/components": ["components/index.tsx"],
       "@/constants": ["constants/index.ts"],
       "@/routes": ["routes/index.ts"],
+      "@/context/*": ["context/*"],
+      "@/config": ["config/index.ts"],
       "@/types": ["types/index.d.ts"]
     }
   },
