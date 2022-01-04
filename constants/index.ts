@@ -1,8 +1,11 @@
 export const colors = {
   white: '#fff',
   black: '#323232',
+  blackLight: '#1A202C',
+  blackGray: '#202532',
   blue: '#001AFF',
   blueLight: '#F0F1FF',
+  violet: '#5667FF',
   gray: '#77839F',
   grayLight: '#F4F8FF',
 };
