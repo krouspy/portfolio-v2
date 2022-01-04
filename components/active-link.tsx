@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link, { LinkProps } from 'next/link';
-import { Button } from '@chakra-ui/react';
+import { Button, useColorModeValue } from '@chakra-ui/react';
 import { colors } from '@/constants';
 
 export const ActiveLink: React.FC<React.PropsWithChildren<LinkProps>> = ({
@@ -11,14 +11,17 @@ export const ActiveLink: React.FC<React.PropsWithChildren<LinkProps>> = ({
 }) => {
   const { asPath } = useRouter();
   const isActive = asPath === href;
+  const activeColor = useColorModeValue(colors.blue, colors.violet);
+  const inactiveColor = useColorModeValue(colors.black, colors.white);
+  const activeBg = useColorModeValue(colors.white, colors.blackLight);
   return (
     <Link href={href} passHref {...rest}>
       <Button
         fontSize={{ base: 'sm', xl: 'md' }}
         fontWeight={isActive ? 'bold' : 'normal'}
-        color={isActive ? colors.blue : colors.black}
+        color={isActive ? activeColor : inactiveColor}
         variant="ghost"
-        bg={isActive ? colors.white : 'inherit'}
+        bg={isActive ? activeBg : 'inherit'}
         borderRadius="8"
       >
         {children}

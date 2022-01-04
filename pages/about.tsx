@@ -1,12 +1,14 @@
 import type { NextPage } from 'next';
 import { Stack, Text } from '@chakra-ui/react';
-import { colors, urls } from '@/constants';
+import { useTheme } from '@/context/theme-context';
 import { TechStack, CustomLink, LineSpacer } from '@/components';
+import { urls } from '@/constants';
 
 const About: NextPage = () => {
+  const { color } = useTheme();
   return (
     <Stack spacing="8">
-      <Text fontSize={{ base: '2xl', md: '3xl' }} color={colors.blue} fontWeight="bold">
+      <Text fontSize={{ base: '2xl', md: '3xl' }} color={color} fontWeight="bold">
         A bit about myself
       </Text>
       <Text fontSize={{ base: 'sm', md: 'md', xl: 'lg' }}>
