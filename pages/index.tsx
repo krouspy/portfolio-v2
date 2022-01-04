@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
-import { Stack, Text, Icon, useBreakpointValue } from '@chakra-ui/react';
+import { Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import { useTheme } from '@/context/theme-context';
 import { SocialIcons, ButtonResume } from '@/components';
 
@@ -11,7 +10,7 @@ const Home: NextPage = () => {
     <Stack h="100%" align="center" px="7%" spacing="8">
       <Text fontSize={{ base: 'xl', md: '4xl' }} fontWeight="bold" align="center">
         <span style={{ color }}>
-          Hi <Image src="/waving-hand.jpg" alt="waving-hand" width="25" height="25" />
+          Hi
           <br /> I am Kenji LAU
         </span>
         <br />
