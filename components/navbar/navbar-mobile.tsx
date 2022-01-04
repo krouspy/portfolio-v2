@@ -38,7 +38,7 @@ export const NavbarMobile: React.FC<INavbarMobile> = ({ pages }) => {
           {pages.map(({ id, name, href }) => {
             const isActive = asPath === href;
             return (
-              <Link key={id} href={href}>
+              <Link key={id} href={href} passHref>
                 <MenuItem color={isActive ? color : inactiveColor}>{name}</MenuItem>
               </Link>
             );
