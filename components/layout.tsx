@@ -18,14 +18,14 @@ const Layout: React.FC = ({ children }) => {
         spacing="0"
         px={{ base: '7%', lg: '15%' }}
       >
-        <Box w="100%" maxW="100%" h="8vh" maxH="8vh">
+        <Box w="100%" maxW="100%" h="10vh" maxH="10vh">
           <Navbar />
         </Box>
         <Box
           w="100%"
           maxW="100%"
           h="100%"
-          minH="92vh"
+          minH="90vh"
           px={{ md: '5%' }}
           pt={{ base: '5%', xl: '8%' }}
           pb="5%"
