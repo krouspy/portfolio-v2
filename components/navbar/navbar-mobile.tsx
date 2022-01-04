@@ -1,8 +1,17 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { Box, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
+import {
+  Box,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { useTheme } from '@/context/theme-context';
 import { colors } from '@/constants';
 
 interface INavbarMobile {
@@ -15,6 +24,8 @@ interface INavbarMobile {
 
 export const NavbarMobile: React.FC<INavbarMobile> = ({ pages }) => {
   const { asPath } = useRouter();
+  const { color } = useTheme();
+  const inactiveColor = useColorModeValue(colors.black, colors.white);
   return (
     <Box display={{ base: 'inline', xl: 'none' }}>
       <Menu isLazy id="navbar-menu" closeOnSelect autoSelect={false}>
@@ -28,7 +39,7 @@ export const NavbarMobile: React.FC<INavbarMobile> = ({ pages }) => {
             const isActive = asPath === href;
             return (
               <Link key={id} href={href}>
-                <MenuItem color={isActive ? colors.blue : colors.black}>{name}</MenuItem>
+                <MenuItem color={isActive ? color : inactiveColor}>{name}</MenuItem>
               </Link>
             );
           })}
