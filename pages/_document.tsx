@@ -6,9 +6,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <link href="/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf" rel="stylesheet" />
-        </Head>
+        <Head></Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
