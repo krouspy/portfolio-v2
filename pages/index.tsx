@@ -18,11 +18,11 @@ const Home: NextPage = () => {
           Hi
           <br /> I am Kenji LAU
         </Text>
-        <Text fontSize={{ base: '4xl', md: '5xl' }} fontWeight="bold">
+        <Text textAlign="center" fontSize={{ base: '4xl', md: '5xl' }} fontWeight="bold">
           a Blockchain Developer
         </Text>
       </Stack>
-      <Text align="center" fontSize={{ base: '0.9em', md: '1.2em' }}>
+      <Text textAlign="center" fontSize={{ base: '0.9em', md: '1.2em' }}>
         I&apos;m a Full-Stack & Blockchain developer located in Paris with a high interest in
         cryptocurrencies and blockchain-based products. I build things around Ethereum in React and
         Solidity and I&apos;m open to explore other ecosystems
