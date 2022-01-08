@@ -31,6 +31,13 @@ export const urls = {
 
 export const projects: IProjectCard[] = [
   {
+    title: 'Capture The Ether',
+    description: 'CTF - Smart contract challenges',
+    inProgress: true,
+    github: 'https://github.com/krouspy/capture-the-ether',
+    technologies: ['Solidity', 'Hardhat'],
+  },
+  {
     title: 'coingecko-rs',
     description: 'Building a Coingecko Rust client',
     inProgress: true,
