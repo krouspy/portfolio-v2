@@ -1,10 +1,18 @@
+import React from 'react';
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
-import { Layout } from '@/components';
 import { ThemeProvider } from '@/context/theme-context';
+import { MainLayout } from '@/components';
+import { NextPageWithLayout } from '@/types';
+import 'react-notion-x/src/styles.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  const Layout = Component.Layout ?? MainLayout;
   return (
     <ChakraProvider>
       <ThemeProvider>

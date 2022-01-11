@@ -1,3 +1,9 @@
+import { NextPage } from 'next';
+import React from 'react';
+
+export type NextPageWithLayout<T = {}> = NextPage<T> & {
+  Layout?: React.FC;
+};
 export interface IExperience {
   id?: number;
   jobTitle: string;

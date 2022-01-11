@@ -1,4 +1,6 @@
-export * from './layout';
+export * from './head';
+export * from './layouts';
+export * from './navbar';
 export * from './social-icons';
 export * from './button-resume';
 export * from './experience';
