@@ -12,6 +12,8 @@ export const colors = {
   grayLight: '#F4F8FF',
 };
 
+export const notionPageIds = ['Capture-The-Ether-034e627de8394db7aafe52e4e8cbe534'];
+
 export const urls = {
   companies: {
     wakam: 'https://www.wakam.com/en/',

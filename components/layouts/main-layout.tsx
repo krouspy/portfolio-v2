@@ -1,16 +1,11 @@
 import React from 'react';
-import Head from 'next/head';
 import { Box, VStack } from '@chakra-ui/react';
-import Navbar from './navbar';
+import { Head, Navbar } from '@/components';
 
-const Layout: React.FC = ({ children }) => {
+const MainLayout: React.FC = ({ children }) => {
   return (
     <div>
-      <Head>
-        <title>Kenji LAU</title>
-        <meta name="description" content="Kenji LAU's Portfolio" />
-        <link rel="icon" href="/logo.svg" />
-      </Head>
+      <Head />
       <VStack
         minH="100vh"
         maxW="100vw"
@@ -29,4 +24,4 @@ const Layout: React.FC = ({ children }) => {
   );
 };
 
-export { Layout };
+export { MainLayout };
