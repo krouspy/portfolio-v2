@@ -25,3 +25,10 @@ export interface IProjectCard {
   technologies: string[];
   inProgress?: boolean;
 }
+
+export interface BlogPostCard {
+  pageId: string;
+  coverUrl: string;
+  title: string;
+  creationDateTimestamp: number;
+}
