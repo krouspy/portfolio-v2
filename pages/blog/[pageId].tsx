@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { NotionAPI } from 'notion-client';
 import { getPageTitle, parsePageId } from 'notion-utils';
-import { Collection, CollectionRow, NotionRenderer } from 'react-notion-x';
+import { NotionRenderer, Collection, CollectionRow, Code } from 'react-notion-x';
 import { ExtendedRecordMap } from 'notion-types';
 import { Head, NotionLayout } from '@/components';
 import { useTheme } from '@/context/theme-context';
@@ -25,6 +25,7 @@ const Blog: NextPageWithLayout<{ recordMap: ExtendedRecordMap }> = ({ recordMap 
         darkMode={colorMode === 'dark'}
         showTableOfContents={true}
         components={{
+          code: Code,
           collection: Collection,
           collectionRow: CollectionRow,
         }}
