@@ -6,7 +6,7 @@ const NotionLayout: React.FC = ({ children }) => {
   return (
     <div>
       <Head />
-      <Box w="100%" maxW="100%" h="100%" minH="90vh">
+      <Box w="100vw" maxW="99vw" h="100%" minH="90vh" overflowX="hidden">
         {children}
       </Box>
     </div>

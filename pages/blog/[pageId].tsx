@@ -5,6 +5,7 @@ import { getPageTitle, parsePageId } from 'notion-utils';
 import { Collection, CollectionRow, NotionRenderer } from 'react-notion-x';
 import { ExtendedRecordMap } from 'notion-types';
 import { Head, NotionLayout } from '@/components';
+import { useTheme } from '@/context/theme-context';
 import { NextPageWithLayout } from '@/types';
 import { notionPageIds } from '@/constants';
 
@@ -15,7 +16,9 @@ const Blog: NextPageWithLayout<{ recordMap: ExtendedRecordMap }> = ({ recordMap 
     return null;
   }
 
+  const { colorMode } = useTheme();
   const title = getPageTitle(recordMap);
+
   return (
     <>
       <Head title={title} />
@@ -23,7 +26,7 @@ const Blog: NextPageWithLayout<{ recordMap: ExtendedRecordMap }> = ({ recordMap 
         disableHeader={true}
         recordMap={recordMap}
         fullPage={true}
-        darkMode={true}
+        darkMode={colorMode === 'dark'}
         showTableOfContents={true}
         components={{
           collection: Collection,

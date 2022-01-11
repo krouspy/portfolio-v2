@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/context/theme-context';
 import { MainLayout } from '@/components';
 import { NextPageWithLayout } from '@/types';
 import 'react-notion-x/src/styles.css';
+import 'prismjs/themes/prism-okaidia.css';
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
