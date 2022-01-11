@@ -12,10 +12,6 @@ import { notionPageIds } from '@/constants';
 const notion = new NotionAPI();
 
 const Blog: NextPageWithLayout<{ recordMap: ExtendedRecordMap }> = ({ recordMap }) => {
-  if (!recordMap) {
-    return null;
-  }
-
   const { colorMode } = useTheme();
   const title = getPageTitle(recordMap);
 

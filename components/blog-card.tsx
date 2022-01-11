@@ -24,7 +24,7 @@ export const BlogCard: React.FC<BlogPostCard> = ({
   return (
     <Link href={href} passHref>
       <Stack direction="column" transition="0.5s ease" _hover={{ cursor: 'pointer', mt: '-7px' }}>
-        <Image src={coverUrl} />
+        <Image src={coverUrl} alt={title} />
         <Text fontSize={{ base: 'xs', md: 'lg', xl: 'xl' }} fontWeight="bold">
           {title}
         </Text>
