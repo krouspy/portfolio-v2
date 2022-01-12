@@ -18,7 +18,7 @@ const Blog: NextPage<{ blogPosts: BlogPostCard[] }> = ({ blogPosts }) => {
       <Text textAlign="center" fontSize={{ base: 'sm', md: 'md', lg: 'lg' }}>
         Sometimes I write about crypto and coding
       </Text>
-      <Grid templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }} gap={3}>
+      <Grid templateColumns={{ base: 'repeat(1, 1fr)' }} gap={3} px={{ lg: '10%' }}>
         {blogPosts.map(({ pageId, coverUrl, title, creationDateTimestamp }) => (
           <GridItem key={pageId}>
             <BlogCard
