@@ -6,6 +6,7 @@ export const Head: React.FC<{ title?: string }> = ({ title }) => {
     <NextHead>
       <title>{title}</title>
 
+      <meta charSet="utf-8" />
       <meta name="author" content="Kenji LAU" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
