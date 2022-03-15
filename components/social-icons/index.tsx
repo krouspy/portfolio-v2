@@ -27,7 +27,7 @@ const buttons = [
     id: 1,
     icon: AiOutlineTwitter,
     ariaLabel: 'icon-twitter',
-    url: 'https://twitter.com/Krouspy2',
+    url: 'https://twitter.com/dawnryy',
   },
   {
     id: 2,
