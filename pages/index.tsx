@@ -1,10 +1,9 @@
 import type { NextPage } from 'next';
-import { Stack, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Stack, Text } from '@chakra-ui/react';
 import { useTheme } from '@/context/theme-context';
-import { SocialIcons, ButtonResume } from '@/components';
+import { SocialIcons } from '@/components';
 
 const Home: NextPage = () => {
-  const buttonSize = useBreakpointValue({ base: 'md', md: 'lg' });
   const { color } = useTheme();
   return (
     <Stack h="100%" align="center" mt="6%" px="7%" spacing="8">
@@ -16,18 +15,16 @@ const Home: NextPage = () => {
           fontWeight="bold"
         >
           Hi
-          <br /> I am Kenji LAU
+          <br /> My name is Kenji LAU
         </Text>
-        <Text textAlign="center" fontSize={{ base: '4xl', md: '5xl' }} fontWeight="bold">
-          a Blockchain Developer
+        <Text textAlign="center" fontSize="4xl" fontWeight="bold">
+          a React/Typescript Engineer
         </Text>
       </Stack>
       <Text textAlign="center" fontSize={{ base: '0.9em', md: '1.2em' }}>
-        I&apos;m a Full-Stack & Blockchain developer located in Paris with a high interest in
-        cryptocurrencies and blockchain-based products. I build things around Ethereum in React and
-        Solidity and I&apos;m open to explore other ecosystems
+        I&apos;m currently Frontend Engineer at Ledger working on the B2B and building stuff in
+        React and Typescript. I like NFTs and currently learning about Layer 2 technologies.
       </Text>
-      <ButtonResume size={buttonSize} />
       <SocialIcons />
     </Stack>
   );

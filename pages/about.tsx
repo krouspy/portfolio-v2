@@ -12,23 +12,19 @@ const About: NextPage = () => {
         A bit about myself
       </Text>
       <Text fontSize={{ base: 'sm', md: 'md', xl: 'lg' }}>
-        I am Full-stack & Blockchain Developer originally from Tahiti and very passionate about
-        cryptocurrencies. I recently graduated with a Master in Financial Engineering from ESILV, an
-        engineering school in Paris.
+        I am a React/Typescript Developer originally from Tahiti and very passionate about
+        cryptocurrencies. I discovered cryptocurrencies in 2018 with Bitcoin then overtime, the more
+        I learned about it, the more I understood the benefits of this technology and the importance
+        to build around it.
         <LineSpacer />
-        I discovered cryptocurrencies in 2018 with Bitcoin then overtime, the more I learned about
-        it, the more I understood the benefits of this technology and the importance to build around
-        it.
+        Fast-forward to today, I had the opportunity to work as a React/Typescript engineer at{' '}
+        <CustomLink href={urls.companies.ledger}>Ledger</CustomLink>, as a Blockchain developer at{' '}
+        <CustomLink href={urls.companies.wakam}>Wakam</CustomLink>. My goal is to keep learning
+        everyday and build things around DeFi and NFTs while exploring other ecosystems such as
+        Polkadot, Avalanche, Solana and Layer 2 technologies.
         <LineSpacer />
-        Fast-forward to today, I had the opportunity to work at an{' '}
-        <CustomLink href={urls.companies.wakam}>Insurance company</CustomLink> and to collaborate on
-        a student project with a{' '}
-        <CustomLink href={urls.companies.sopraBankingSoftware}>Banking company</CustomLink>. My goal
-        is to keep learning everyday and build things around DeFi and NFTs while exploring other
-        ecosystems such as Polkadot, Avalanche, Solana and Layer 2 technologies.
-        <LineSpacer />
-        My main Tech Stack is currently focused on the web and I am looking to dive deep into other
-        technologies like Golang and Rust.
+        My main Tech stack is currently focused on the web and I am looking to dive deep into other
+        languages like Rust and Golang.
         <LineSpacer />
         Aside from that, I really enjoy video games like{' '}
         <CustomLink href={urls.videoGames.leagueOfLegends}>League of Legends</CustomLink> and{' '}

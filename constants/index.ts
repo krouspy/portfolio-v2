@@ -16,8 +16,8 @@ export const notionPageIds = ['Capture-The-Ether-034e627de8394db7aafe52e4e8cbe53
 
 export const urls = {
   companies: {
+    ledger: 'https://www.ledger.com/',
     wakam: 'https://www.wakam.com/en/',
-    sopraBankingSoftware: 'https://www.soprabanking.com/',
   },
   videoGames: {
     leagueOfLegends: 'https://www.leagueoflegends.com/en-us/',
@@ -33,32 +33,53 @@ export const urls = {
 
 export const projects: IProjectCard[] = [
   {
+    title: 'Shadowy',
+    description: 'PoC - Tokenize Github contributions',
+    inProgress: true,
+    github: 'https://github.com/0xshadowy',
+    technologies: ['Next', 'Tailwind', 'Solidity'],
+  },
+  {
+    title: 'Starky',
+    description: 'Starknet Typescript library',
+    inProgress: false,
+    github: 'https://github.com/krouspy/starky',
+    technologies: ['Typescript', 'Turborepo'],
+  },
+  {
+    title: 'Ishgar',
+    description: 'NFT marketplace on Starknet',
+    inProgress: false,
+    github: 'https://github.com/ishgarproject',
+    technologies: ['Next', 'Typescript', 'Cairo'],
+  },
+  {
     title: 'Capture The Ether',
     description: 'CTF - Smart contract challenges',
-    inProgress: true,
+    inProgress: false,
     github: 'https://github.com/krouspy/capture-the-ether',
     technologies: ['Solidity', 'Hardhat'],
   },
   {
     title: 'coingecko-rs',
-    description: 'Building a Coingecko Rust client',
-    inProgress: true,
+    description: 'Learning Rust by building a Coingecko Rust client',
+    inProgress: false,
     github: 'https://github.com/krouspy/coingecko-rs',
     technologies: ['Rust', 'Reqwest'],
   },
   {
     title: 'Twitter Clone',
-    description: 'Building a Twitter clone with Next.js, trpc, prisma and PlanetScale',
-    inProgress: true,
+    description: 'Learning new tools by building a Twitter clone',
+    inProgress: false,
     github: 'https://github.com/krouspy/twitter-clone',
-    technologies: ['Next.js', 'tRPC', 'Prisma'],
+    technologies: ['Next', 'tRPC', 'Prisma'],
   },
   {
     title: 'Portfolio V2',
     description: 'Second version of my personal website',
     inProgress: false,
     github: 'https://github.com/krouspy/portfolio-v2',
-    technologies: ['Next.js', 'Vercel', 'Chakra UI'],
+    technologies: ['Next', 'Vercel', 'Chakra UI'],
   },
   {
     title: 'Schedular Multisig',
@@ -69,17 +90,10 @@ export const projects: IProjectCard[] = [
   },
   {
     title: 'Portfolio',
-    description: 'First version of my personal website built with Next.js and hosted on Vercel',
+    description: 'First version of my personal website built with Next and hosted on Vercel',
     inProgress: false,
     github: 'https://github.com/krouspy/portfolio',
-    technologies: ['Next.js', 'Vercel', 'Chakra UI'],
-  },
-  {
-    title: 'Colloc-Chain',
-    description: 'Collocation platform built on a Hyperledger Besu private blockchain',
-    inProgress: false,
-    github: 'https://github.com/colloc-chain',
-    technologies: ['Solidity', 'Node.js', 'Mongo'],
+    technologies: ['Next', 'Vercel', 'Chakra UI'],
   },
   {
     title: 'Monnaies Numeriques',

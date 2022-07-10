@@ -28,7 +28,33 @@ export default Experiences;
 const experiences: IExperience[] = [
   {
     id: 0,
-    jobTitle: 'Full-Stack & Blockchain Developer',
+    jobTitle: 'Frontend Engineer',
+    company: 'Ledger',
+    websiteUrl: urls.companies.ledger,
+    dates: 'May 2022 - Now',
+    details: [
+      {
+        id: 0,
+        content:
+          'Owning the migration of our codebase to a monorepo with modern tools such as pnpm, turborepo and changesets',
+      },
+      {
+        id: 1,
+        content: 'Writing unit tests with jest for our CLI',
+      },
+      {
+        id: 2,
+        content: 'Working in an agile environment',
+      },
+      {
+        id: 3,
+        content: 'Exploring the migration of our frontend from Flow to Typescript',
+      },
+    ],
+  },
+  {
+    id: 1,
+    jobTitle: 'Blockchain Developer',
     company: 'Wakam',
     websiteUrl: urls.companies.wakam,
     dates: 'October 2019 - August 2021',
@@ -45,29 +71,6 @@ const experiences: IExperience[] = [
         id: 2,
         content:
           'Worked with a variety of languages, platforms and frameworks: Solidity, React, Node.js, Typescript, Microsoft Azure, C# and Docker',
-      },
-    ],
-  },
-  {
-    id: 1,
-    jobTitle: 'Backend Engineer',
-    company: 'SopraBankingSoftware',
-    websiteUrl: urls.companies.sopraBankingSoftware,
-    dates: 'October 2020 - January 2021',
-    details: [
-      {
-        id: 0,
-        content: 'Developed a collocation platform on a private blockchain Hyperledger Besu',
-      },
-      {
-        id: 1,
-        content:
-          'Designed the architecture and wrote the backend in Node.js, Express, Mongoose and Solidity',
-      },
-      {
-        id: 2,
-        content:
-          'Explored tools to monitor blockchain events: Eventeum and the ELK Stack (ElasticSearch, Logstach, Kibana)',
       },
     ],
   },
