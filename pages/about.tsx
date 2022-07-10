@@ -18,8 +18,8 @@ const About: NextPage = () => {
         to build around it.
         <LineSpacer />
         Fast-forward to today, I had the opportunity to work as a React/Typescript engineer at{' '}
-        <CustomLink href={urls.companies.ledger}>Ledger</CustomLink>, as a Blockchain developer at{' '}
-        <CustomLink href={urls.companies.wakam}>Wakam</CustomLink>. My goal is to keep learning
+        <CustomLink href={urls.companies.ledger}>Ledger</CustomLink> and as a Blockchain developer
+        at <CustomLink href={urls.companies.wakam}>Wakam</CustomLink>. My goal is to keep learning
         everyday and build things around DeFi and NFTs while exploring other ecosystems such as
         Polkadot, Avalanche, Solana and Layer 2 technologies.
         <LineSpacer />
